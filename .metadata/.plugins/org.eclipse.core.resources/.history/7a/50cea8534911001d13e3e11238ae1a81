@@ -1,0 +1,27 @@
+package practice01;
+
+import java.util.Scanner;
+
+public class Practice01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 비밀번호가 “1111” 일 때
+		// 참일 때 “비밀번호가 맞습니다”를 출력하고, 
+		// 거짓일 때, “비밀번호가 아닙니다”를 출력하세요
+		// * 문자를 비교할 때는 .equals(비교할 문자)를 사용하면 된다
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("비밀번호를 입력하세요 : ");
+		String password = input.next();
+		if (password.equals("1111")) {
+			System.out.println("비밀번호가 맞습니다");
+		} 
+		else {
+			System.out.println("비밀번호가 아닙니다");
+		}
+		
+		
+	}
+
+}
