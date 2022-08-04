@@ -39,4 +39,8 @@
 			<item key="bundlePackage" value="=chap06_Array/src&lt;chap06_ArrayEx"/>
 		</section>
 	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+	</section>
 </section>
