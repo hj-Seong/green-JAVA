@@ -43,6 +43,25 @@ public class StringTest {
 		// toLowerCase(), toUpperCase()
 		word = "Apple";
 		System.out.println(word.toLowerCase());
+		
+		// 랩퍼 클래스 : 기초자료형을 참조형(객체)로 포장하는 클래스
+		int num = 10; // 메소드를 쓸수 없음
+		
+		// 랩퍼 클래스를 사용하면 메소드를 쓸수 있음
+		Integer objNum = new Integer(10);
+		System.out.println(objNum.equals(0));
+		System.out.println(objNum == 10);
+			// Integer에서 메소드를 사용할 수 있다.
+		num = Integer.parseInt("5");
+		System.out.println(num+3);
+		
+		// parse를 사용하면 문자열을 기초자료형으로 바꿀수있다
+		double objDouble = Double.parseDouble("0.5");
+		System.out.println(objDouble+0.1);
+		
+		// 랩퍼클래스를 이용해서 문자열로 바꿔줄수있다.
+		String doubleNum = Double.toString(0.5);
+		System.out.println(doubleNum+0.1);
 	}
 
 }

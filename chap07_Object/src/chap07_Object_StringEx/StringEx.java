@@ -41,6 +41,27 @@ public class StringEx {
 		// 단 replace는 동일한 글자를 전부 * 으로 바꾼다
 		System.out.println(s.replace(middle, '*'));
 		
+		// 실습 Integer.parseInt()
+		String birthDay = "0108";
+		System.out.println(birthDay);
+		// 전체를 숫자로 바꿈
+		int birthDayNum = Integer.parseInt(birthDay);
+		System.out.println(birthDayNum);
+		
+		// 달과 일을 잘라서 숫자로 바꿈
+		// substring을 이용하여 글자를 자름
+		String month = birthDay.substring(0, 2); 
+		// 자른 글자를 숫자로 바꿔줌
+		int birthDayMonth = 
+				Integer.parseInt(month);
+		System.out.println(birthDayMonth);
+		
+		// 글자에서 일자의 자리만큼 잘라줌
+		String day = birthDay.substring(2); 
+		// 자른 글자를 숫자로 바꿔줌
+		int birthDayDay = 
+				Integer.parseInt(day);
+		System.out.println(birthDayDay);
 	}
 
 }
