@@ -49,6 +49,10 @@ public class ObjectClass {
 		System.out.println(myStudent);
 		System.out.println(myStudent1);
 		
+		// new와 생성자를 통해서 객체 생성
+		// Box(50) 50의 값을 인수라고 부른다
+		Box mybox2 = new Box(50);
+		System.out.println(mybox2.calVoume());
 	}
 
 }
