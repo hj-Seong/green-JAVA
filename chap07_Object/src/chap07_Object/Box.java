@@ -29,9 +29,22 @@ public class Box {
 	
 	
 	// 메소드 - 객체의 행동/연산/명령
+	// int - 반환값(return)의 자료형 , 반드시 return 사용
+	// void - 반환값이 없는 메소드, return 없음
 	int calVoume() {
-		return width*length*height;
+		// 지역변수는 메소드 안에서만 값을 가지고 있는다
+		int v = width*length*height;
+		return v; // 필요한 값은 return을 통해서 내보내준다.
 	}
 	
+	void printData() {
+		System.out.println("현재 가로,세로,높이 길이 : "
+				+this.width+", "+this.length+", "+this.length );
+	}
+	
+	// 메소드를 이용해서 필드의 값을 바꿀수 있다.
+	void setWidth( int width ) {
+		this.width = width;
+	}
 	
 }

@@ -28,6 +28,7 @@ public class ObjectClass {
 		// 객체에 접근하는 방법 - 필드의 값에 접근해서 출력
 		System.out.println(myBox.height);
 		// 객체에 접근하는 방법 - 메소드의 계산결과를 출력
+		
 		System.out.println(myBox.calVoume());
 		
 		// 만든 클래스의 객체 생성하기
@@ -62,6 +63,24 @@ public class ObjectClass {
 		System.out.println(s1.name);
 		System.out.println(s2.name);
 		System.out.println(s3.name + s3.grade);
+		
+		myBox.setWidth(50);
+		myBox.printData();
+		
+		s1.setGrade(4);
+		s1.printGrade();
+		s2.printGrade();
+					// return 값 30이 들어감
+		System.out.println(s3.getAge());
+		// 아래와 같이 출력되는것과 동일 
+		//System.out.println(30);
+		
+		s1.printLevel();
+		s2.printLevel();
+		
+		NumCheck num = new NumCheck();
+		num.setNum(-10);
+		num.checkNum();
 	}
 
 }
