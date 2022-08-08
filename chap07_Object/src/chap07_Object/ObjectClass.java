@@ -53,6 +53,15 @@ public class ObjectClass {
 		// Box(50) 50의 값을 인수라고 부른다
 		Box mybox2 = new Box(50);
 		System.out.println(mybox2.calVoume());
+		
+		// 실습. 생성자 확인
+		Student s1 = new Student();
+		Student s2 = new Student("흥부");
+		Student s3 = new Student("놀부", 30, 5);
+		
+		System.out.println(s1.name);
+		System.out.println(s2.name);
+		System.out.println(s3.name + s3.grade);
 	}
 
 }
