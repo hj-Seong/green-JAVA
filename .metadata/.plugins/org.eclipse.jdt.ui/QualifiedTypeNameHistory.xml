@@ -3,5 +3,8 @@
     <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="chap07_Object.Student"/>
+    <fullyQualifiedTypeName name="chap07_Object.NumCheck"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="chap07_ObjectEx.RandomUD"/>
 </qualifiedTypeNameHistroy>
