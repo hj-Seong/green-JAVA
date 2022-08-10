@@ -9,12 +9,18 @@ public class Student {
 	public int age;
 	public int grade;
 	
+	// 정적 변수 - 생성된 학생들의 수를 저장
+	// Student 클래스가 없는 경우 
+	// Student 클래스 작성 후, 깃의 내용 복사후 사용
+	static int studentCount = 0;
+	
 	// 매개변수를 갖지않는 생성자
 	// 이름(홍길동) 나이(0) 학년(0) 초기화
 	Student() {
 		this.name = null;
 		this.age = 0;
 		this.grade = 0;
+		studentCount++;
 	}
 	
 	// name값을 매개변수로 받아오는 생성자 
@@ -23,6 +29,7 @@ public class Student {
 		this.name = name;
 		this.age = 0;
 		this.grade = 0;
+		studentCount++;
 	}
 	
 	// 매개변수를 여러개 받아와서 사용할 수 있다
@@ -30,6 +37,7 @@ public class Student {
 		this.name = name;
 		this.age = age;
 		this.grade = grade;
+		studentCount++;
 	}
 	
 	// 메소드 
@@ -60,6 +68,9 @@ public class Student {
 		
 	}
 	
-	
+	// 정적 메소드 studentCount 를 return 하는 메소드 
+	static int getStudentCount() {
+		return studentCount;
+	}
 	
 }

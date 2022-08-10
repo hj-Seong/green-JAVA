@@ -6,6 +6,7 @@ public class Student {
 	int number;
 	int score;
 	
+	
 	// 생성자
 	Student() {
 		this.name = "홍길동";
@@ -17,6 +18,7 @@ public class Student {
 		this.name = name;
 		this.number = number;
 		this.score = 0;
+		
 	}
 	
 	Student(String name, int number, int score) {

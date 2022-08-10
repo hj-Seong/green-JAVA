@@ -120,10 +120,47 @@ public class ObjectClass {
 		
 		if (box4.equalsBox(cloneBox)) {
 			System.out.println("크기가 같은 박스입니다");
-		}else {
+		} else {
 			System.out.println("크기가 다른 박스입니다");
 		}
 		
+		// 정적 변수는 각각의 객체를 통해서 출력할수 있다.
+		System.out.println(box4.boxCount);
+		System.out.println(box5.boxCount);
+		// 정적 변수는 클래스를 통해서 출력할수 있다
+		System.out.println(Box.boxCount);
+		
+		Box box6 = new Box();
+		System.out.println(box4.boxCount);
+		
+		// 다른 클래스에서 만든 정적 변수(상수)
+		System.out.println(Math.PI);
+		
+		// 실습내용 확인을 위한 정적변수
+		System.out.println(Student.studentCount);
+		// 정적메소드를 이용한 출력
+		System.out.println(Box.getBoxCount());
+		
+		// Math의 정적 메소드 사용
+		// sqrt() 제곱근을 구하는 메소드
+		// 객체를 가지고 있지 않기에, 값을 받아와서 계산
+		System.out.println(Math.sqrt(16));
+		
+		System.out.println(Student.getStudentCount());
+		
+		// 정적 메소드를 가진 클래스 확인.
+		System.out.println(MathNum.intAdd(10, 4));
+		System.out.println(MathNum.intMax(10, 4));
+		
+		//(4123/134, 6234/231)와 (673/3, 424/2)에서 각각의 큰 값을 더하라.
+		int maxA = MathNum.intMax(4123/134, 6234/231);
+		int maxB = MathNum.intMax(673/3, 424/2);
+		int sum = MathNum.intAdd(maxA, maxB);
+		System.out.println(sum);
+		
+		// 정적변수를 이용한 상수 
+		// Box.MAX_BOX_LINE=10; > final키워드로 수정할수없다
+		System.out.println(Box.MAX_BOX_LINE);
 	}
 
 }

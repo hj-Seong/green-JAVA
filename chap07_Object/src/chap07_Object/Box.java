@@ -7,6 +7,15 @@ public class Box {
 	int length;
 	int height;
 	
+	// 정적 변수 
+	// 모든 박스의 갯수를 저장 > 객체 생성시 1씩 증가
+	static int boxCount = 0;
+	
+	// 정적변수를 이용한 상수
+	// final 을 이용하여 초기화만 가능하다.
+	static final int MAX_BOX_LINE = 300;
+	
+	
 	// 생성자를 작성하지 않으면 
 	// 자바에서 기본 생성자를 통해서 객체를 생성할수 있게한다.
 	
@@ -20,6 +29,8 @@ public class Box {
 		this.width = 10;
 		this.length = 10;
 		this.height = 10;
+		
+		boxCount++;
 	}
 	
 	// 매개변수를 갖는 생성자
@@ -30,6 +41,8 @@ public class Box {
 		this.width = z;
 		this.length = z;
 		this.height = z;
+		
+		boxCount++;
 	}
 	
 	
@@ -80,7 +93,16 @@ public class Box {
 		}
 	}
 	
-	
+	// 정적 메소드
+	// 클래스에서 바로 접근할 수 있는 메소드
+	static int getBoxCount() {
+		// 정적 메소드는 클래스로 접근하는 메소드이기 때문에
+		// 객체가 가지고 있는 필드에는 접근할 수 없다
+		// 따라서 this 를 사용할 수 없음.
+		
+		// 매개변수를 받아와 사용하거나, 지역변수를 사용할 수 있다.
+		return boxCount;
+	}
 	
 	
 }
