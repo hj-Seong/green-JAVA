@@ -31,6 +31,7 @@ public class Test0810 {
  		s1.setScore(80);
  		s1.printResult();
  		s2.printResult();
+
  		
 	}
 

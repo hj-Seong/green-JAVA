@@ -52,4 +52,35 @@ public class Box {
 		this.width = width;
 	}
 	
+	// 기초형을 받아와서 숫자를 더한 후에 출력
+	// Box와 관계가 없고 매개변수로 받아온 값이 복사되어 들어온값인지 확인하기 위함
+	int plus(int num) {
+		// 매개변수로 받아온 num값은 1이 증가됨
+		return ++num;
+	}
+	
+	// 참조형을 받아와서 값을 수정한 후에 출력
+	// Box객체를 받아와서 그 값을 현재 객체의 값으로 복사 
+	void cloneBox (Box box) {
+		box.height = this.height;
+		box.length = this.length;
+		box.width = this.width;
+		System.out.println("메소드에서 수정된 높이 : "+ box.height);
+	}
+	
+	// 실습. 참조형을 받는 메소드 작성
+	boolean equalsBox( Box box ) {
+		// 객체 box를 가져와서 가로세로높이가 같은 경우 true를 return
+		// 아닐경우 false를 return
+		if( height == box.height && width == box.width 
+				&& length == box.length) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	
+	
+	
 }

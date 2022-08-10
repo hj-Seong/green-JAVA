@@ -91,6 +91,39 @@ public class ObjectClass {
 		//  random의 범위 0 < random() < 1
 		System.out.println(Math.random()*10+1);
 
+		// 메소드 매개변수로 전달 - 값을 복사해서 전달
+		// 기초형
+		int x =5;
+		Box box4 = new Box();
+		// 변수x를 넣어 값이 복사되어 들어가는지 확인
+		System.out.println(box4.plus(x));
+		// 아래x 값이 바뀌지않았으면 값이 복사되어 들어간 것.
+		System.out.println(x);
+		
+		// 참조형 - 주소값이 복사되어 들어간다 > 객체에 바로 접근해서수정
+		Box cloneBox = new Box(50);
+		// 가로세로높이가 전부 50일때 결과 값
+		System.out.println(cloneBox.calVoume());
+		box4.cloneBox(cloneBox);
+		// 주소값으로 접근했기때문에, 값이 수정되어 출력
+		System.out.println(cloneBox.calVoume());
+		
+		// 기초형의 값을 넣고 수정해서 사용하고 싶은 경우
+		int y =10;
+		// 메소드의 return값을 동일한 변수가 받아와서 저장한다.
+		y = box4.plus(y); 
+		System.out.println(y);
+		
+		Box box5 = new Box(30);
+		System.out.println(box4.equalsBox(cloneBox));
+		System.out.println(box4.equalsBox(box5));
+		
+		if (box4.equalsBox(cloneBox)) {
+			System.out.println("크기가 같은 박스입니다");
+		}else {
+			System.out.println("크기가 다른 박스입니다");
+		}
+		
 	}
 
 }

@@ -19,6 +19,12 @@ public class Student {
 		this.score = 0;
 	}
 	
+	Student(String name, int number, int score) {
+		this.name = name;
+		this.number = number;
+		this.score = score;
+	}
+	
 	void setScore(int score) {
 		this.score = score;
 	}
