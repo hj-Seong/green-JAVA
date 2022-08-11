@@ -13,7 +13,30 @@ public class Order {
 	private static int orderCount = 0;
 	
 	// 생성자
-	public Order() {
+	public Order() {	
+		this.orderNumber = numString();
+		this.id= "";
+		this.name = "";
+		this.productNum = "PD-000";
+	}
+	
+	public Order(String id, String name, String productNum) {
+		this.orderNumber = numString();
+		this.id= id;
+		this.name = name;
+		this.productNum = productNum;
+	}
+	
+	public String getOrderNumber() {
+		return orderNumber;
+	}
+	
+	public void setOrderNumber( String orderNumer) {
+		this.orderNumber = orderNumer;
+	}
+	
+	// orderNumber 자동으로 작성하는 메소드
+	private String numString() {
 		Calendar cal = Calendar.getInstance();
 		// 년도, 달, 일
 		// cal객체를 이용하여 현재 날짜를 받아옴
@@ -33,26 +56,10 @@ public class Order {
 		String numZeroString = String.format("%d%02d%02d%04d", 
 							year, month, date, orderCount);
 		
-		this.orderNumber = numZeroString;
-		this.id= "";
-		this.name = "";
-		this.productNum = "PD-000";
+		orderCount++;
 		
-	}
-	
-	public Order(String id, String name, String productNum) {
-		this.orderNumber = "00000000";
-		this.id= id;
-		this.name = name;
-		this.productNum = productNum;
-	}
-	
-	public String getOrderNumber() {
-		return orderNumber;
-	}
-	
-	public void setOrderNumber( String orderNumer) {
-		this.orderNumber = orderNumer;
+		return numZeroString;
+		
 	}
 	
 	

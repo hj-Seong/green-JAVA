@@ -10,7 +10,7 @@ public class AnimalCard {
 	private static int cardCount=0;
 
 	// 정적 변수로 만든 상수 MAX_CARD = 10; - public 
-	public static final int MAX_CARD = 10;
+	public static final int MAX_CARD = 100;
 	
 	// 정적 메소드 getCardCount - public
 	public static int getCardCount () {
