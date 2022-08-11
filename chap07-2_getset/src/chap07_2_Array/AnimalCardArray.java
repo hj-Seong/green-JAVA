@@ -13,7 +13,10 @@ public class AnimalCardArray {
 		// 1) 진료카드의 갯수 2) 진료카드 내용확인 3) 진료카드 작성 4) 종료
 		// 2. 카드의 갯수가 100일경우 만들수 없음
 		AnimalCard[] cards = new AnimalCard[AnimalCard.MAX_CARD];
-
+		for ( int i =0 ; i<99 ; i++) {
+			cards[i] = new AnimalCard();
+		}
+		
 		Scanner input = new Scanner(System.in);
 		while (true) {
 			System.out.print("1. 진료카드 갯수 2. 진료카드 내용확인"
@@ -33,14 +36,23 @@ public class AnimalCardArray {
 				}
 				
 				// 인덱스 값을 통해서 하나만 확인하는 내용
-
+				System.out.print("확인할 진료카드 인덱스를 적어주세요 : ");
+				int index = input.nextInt();
+				if ( index >= 0 && index < AnimalCard.getCardCount()) {
+					cards[index].printAnimalCard();
+				} else {
+					System.out.println("존재하지않는 카드입니다");
+				}
 				
 			}
 			else if (option == 3) {
 				// getCardCount = 100 까지 가능
 				// 100이 되었을때 더이상 추가할 수 없습니다를 출력.
 				// 아래 내용 실행하지않음 (진료카드 추가)
-				
+				if (AnimalCard.getCardCount() == 100) {
+					System.out.println("더이상 추가를 할 수 없습니다");
+					continue;
+				}
 				
 				// 새 진료카드 추가  - 입력
 				System.out.print("동물의 종류와 이름 개월수를 작성하세요 : ");
