@@ -11,7 +11,7 @@ public class Box {
 	// 모든 박스의 갯수를 저장 > 객체 생성시 1씩 증가
 	static int boxCount = 0;
 	
-	// 정적변수를 이용한 상수
+	// 정적 변수를 이용한 상수
 	// final 을 이용하여 초기화만 가능하다.
 	static final int MAX_BOX_LINE = 300;
 	
