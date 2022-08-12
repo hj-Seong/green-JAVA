@@ -12,6 +12,11 @@
     <fullyQualifiedTypeName name="chap07_Object.MathNum"/>
     <fullyQualifiedTypeName name="chap07_1_access.AccessA"/>
     <fullyQualifiedTypeName name="chap07_1_accessB.AccessB"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="chap07_1_accessB.BankAcc"/>
+    <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="chap07_2_Array.Order"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="chap07_2_getset.AnimalCard"/>
 </qualifiedTypeNameHistroy>
