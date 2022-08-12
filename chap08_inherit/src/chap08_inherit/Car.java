@@ -37,4 +37,9 @@ public class Car {
 		return this.speed;
 	}
 	
+	@Override
+	public String toString() {
+		return color+"색 차량입니다";
+	}
+	
 }

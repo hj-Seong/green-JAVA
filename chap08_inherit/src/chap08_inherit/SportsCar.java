@@ -8,7 +8,7 @@ public class SportsCar extends Car{
 	
 	// 서브 클래스의 생성자
 	public SportsCar() {
-		// 묵시적 호출 > 슈퍼클래스의 생성자를 작성하지않았을때
+		// 묵시적 호출 > 슈퍼클래스의 생성자를 작성하지 않았을 때
 		// 항상 디폴트 생성자를 호출한다.
 		this.turbo = false;
 	}
