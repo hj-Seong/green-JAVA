@@ -28,6 +28,13 @@ public class InheritMain {
 		System.out.println(car1.speedUp(10));
 		
 		w1.intro();
+		w1.selfIntro();
+		
+		SportsCar car3 = new SportsCar();
+		SportsCar car4 = new SportsCar(10, 2, "blue", true);
+		
+		
+		
 	}
 
 }

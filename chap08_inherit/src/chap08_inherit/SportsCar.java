@@ -6,6 +6,20 @@ public class SportsCar extends Car{
 	// 서브 클래스의 필드
 	private boolean turbo;
 	
+	// 서브 클래스의 생성자
+	public SportsCar() {
+		// 묵시적 호출 > 슈퍼클래스의 생성자를 작성하지않았을때
+		// 항상 디폴트 생성자를 호출한다.
+		this.turbo = false;
+	}
+	
+	public SportsCar(int speed, int gear, String color, boolean turbo) {
+		// 명시적 호출 > 슈퍼클래스의 생성자를 작성
+		super(speed, gear, color);
+		this.turbo = turbo;
+	}
+	
+	
 	// 서브 클래스의 메소드
  	public void setTurbo(boolean turbo) {
 		this.turbo = turbo;
