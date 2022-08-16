@@ -22,6 +22,9 @@ public class Book {
 		author = "미상";
 		page = 0;
 		checkOut = false;
+		
+		bookCount++;
+		
 	}
 	// 매개변수를 갖는 생성자
 	public Book(String title, String author, int page) {
@@ -29,6 +32,9 @@ public class Book {
 		this.author = author;
 		this.page = page;
 		this.checkOut = false;
+		
+		bookCount++;
+		
 	}
 	
 	// 메소드
@@ -41,7 +47,8 @@ public class Book {
 	// false로 값을 바꾸고, "책을 반납하였습니다" 출력
 	// false일 때 :  true로 바꾸고 "책을 대여하였습니다" 출력
 	public void isCheckOut () {
-		if (checkOut) {
+		if (checkOut) { 
+			// checkOut은 대여했을 때 true
 			checkOut = false;
 			System.out.println("책을 반납하였습니다");
 		} else {
