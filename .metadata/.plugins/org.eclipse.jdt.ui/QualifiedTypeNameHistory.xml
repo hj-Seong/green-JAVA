@@ -19,4 +19,11 @@
     <fullyQualifiedTypeName name="chap07_2_Array.Order"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="chap07_2_getset.AnimalCard"/>
+    <fullyQualifiedTypeName name="chap08_inherit.Car"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="chap08_inherit.People"/>
+    <fullyQualifiedTypeName name="chap08_inherit.SportsCar"/>
+    <fullyQualifiedTypeName name="chap08_inherit.Worker"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
 </qualifiedTypeNameHistroy>
