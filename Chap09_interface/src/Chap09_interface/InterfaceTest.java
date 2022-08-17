@@ -21,6 +21,25 @@ public class InterfaceTest {
 		DisplayTV tv = new DisplayTV();
 		tv.onDisplay();
 		tv.offDisplay();
+		
+		Student s1 = new Student();
+		Student s2 = new Student("흥부", 1);
+		
+		int check = s1.compareTo(s2);
+		switch (check) {
+		case 1:
+			System.out.println("s1의 학년이 더 높습니다");
+			break;
+		case 0:
+			System.out.println("s1과 학년이 같습니다");
+			break;
+		case -1:
+			System.out.println("s1의 학년이 더 낮습니다");
+			break;
+		default:
+			System.out.println("잘못된 객체입니다.");
+		}
+		
 	}
 
 }
