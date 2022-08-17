@@ -17,7 +17,6 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="chap07_2_Array.Order"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="chap07_2_getset.AnimalCard"/>
     <fullyQualifiedTypeName name="chap08_inherit.Car"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
@@ -25,5 +24,11 @@
     <fullyQualifiedTypeName name="chap08_inherit.SportsCar"/>
     <fullyQualifiedTypeName name="chap08_inherit.Worker"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="practice04.Game"/>
+    <fullyQualifiedTypeName name="practice04.BoardGame"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="practice04.Book"/>
+    <fullyQualifiedTypeName name="chap08_inheritAnimal.AnimalCard"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="chap08_inheritAnimal.AnimalCardNew"/>
 </qualifiedTypeNameHistroy>
