@@ -84,6 +84,33 @@ public class InterfaceTest {
 		Bus bus = new Bus();
 		bus.RestDay(7);
 		
+		// 인터페이스의 다형성
+		// 참조변수의 자료형은 인터페이스이더라도 
+		// 안에 객체는 인터페이스를 구현한 객체가 들어오고 그 메소드를 사용할수 있다   
+		CarInterface car = new Truck();
+		car.printCar();
+		CarInterface car2 = new Taxi();
+		car2.printCar();
+		
+		// 강제형변환 - 슈퍼클래스나 인터페이스로 만든 참조변수로 접근하는데 한계
+		// 특히 상속의 경우는 서브클래스가 다른 메소드를 가질 확률이 높다
+		Truck carTruck = (Truck) car;
+		carTruck.setTruck("yellow", 20);
+		
+		// 차 3대를 배열넣어 넣어서 생성
+		// CarInterface를 사용해서 Taxi, Truck, Bus 까지 객체 생성
+		int[] array = {new Integer(1),new Integer(2)}; //참고
+		CarInterface[] carArray = 
+					{ new Taxi(), new Truck(), new Bus()};
+		
+		// 생성된 객체를 for문을 통해서 printCar출력
+		// Bus는 printCar의 내용을 작성하지않아서 출력되지않음
+		// 확인하고 싶은 분들은 printCar의 내용을 채워주시면됩니다.
+		for (int i =0 ; i<carArray.length; i++) {
+			carArray[i].printCar();
+		}
+		
+		
 	}
 
 }
