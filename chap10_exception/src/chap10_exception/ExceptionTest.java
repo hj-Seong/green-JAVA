@@ -1,5 +1,7 @@
 package chap10_exception;
 
+import java.util.Scanner;
+
 public class ExceptionTest {
 
 	public static void main(String[] args) {
@@ -39,13 +41,78 @@ public class ExceptionTest {
 		
 		try {
 			System.out.println(arrayNum[index]);
-		} catch(ArrayIndexOutOfBoundsException e) {
+		} 
+		catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("존재하지 않는 인덱스입니다");
 			System.out.println(e); //어떤 오류인지 확인
-		} catch(Exception e) {
+		} 
+		catch(Exception e) {
 			System.out.println("오류 발생");
 			System.out.println(e); //어떤 오류인지 확인
 		}
+		
+		try ( Scanner input = new Scanner(System.in) ) {
+			System.out.print("숫자를 입력해주세요");
+			int num = input.nextInt();
+			System.out.println(num);
+		} catch (Exception e) {
+			System.out.println("잘못입력하였습니다");
+			System.out.println(e);
+		}
+		
+		// 직접만든 클래스의 예외처리 전달.
+		MethodThrow div = new MethodThrow(4,0);
+		try {
+			// 객체의 메소드에 throw를 통해서 요청하게 되면 
+			// 메소드를 사용할때 강제로 try/catch를 사용해야한다.
+			System.out.println(div.division());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			// e.printStackTrace();
+			System.out.println("오류났습니다");
+		}
+		
+		try {
+			System.out.println(div.numArray(10));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			// e.printStackTrace();
+			System.out.println("오류가 났습니다");
+		}
+		
+		try {
+			div.myMethode();
+		} catch (MyException e) {
+			// TODO Auto-generated catch block
+			// 오버라이딩한 toString 확인
+			System.out.println(e);
+			e.printStackTrace();
+		}
+		
+		// Main에서 throw로 사용자 예외 객체 확인하기.
+		try {
+			if(true) {
+				throw new MyException();
+			} 
+		} catch(Exception e){
+			System.out.println(e);
+			e.printStackTrace();
+		}
+
+		// 예외객체를 생성하는 클래스인 GreenException
+		// Exception 상속하고
+		// toString을 오버라이딩해서 "그린에서 만든 예외입니다"를 return 
+		
+		// 아래에서 try.catch throw를 사용해서 확인하세요.
+		try {
+			if(true) {
+				throw new GreenException();
+			}
+		} catch(Exception e) {
+			System.out.println(e);
+			e.printStackTrace();
+		}
+		
 	}
 
 }
