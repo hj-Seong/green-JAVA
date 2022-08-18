@@ -25,5 +25,7 @@ public interface CarInterface {
 	default public void move() {
 		System.out.println("내용을 추가하기위해서는 default 키워드 사용");
 	};
+	
+	
 
 }

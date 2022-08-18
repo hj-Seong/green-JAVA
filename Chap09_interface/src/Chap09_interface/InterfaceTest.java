@@ -40,6 +40,50 @@ public class InterfaceTest {
 			System.out.println("잘못된 객체입니다.");
 		}
 		
+		CarInterface ci = new CarInterface() {
+			@Override
+			public void printCar() {
+				// TODO Auto-generated method stub
+				System.out.println("익명클래스의 객체입니다");
+			}
+		};
+		ci.printCar();
+		
+		// DisplayInterface를 이용하여 인터페이스 객체를 만드세요(익명객체)
+		// 변수이름은 di 
+		// di가 켜졌습니다. / di가 꺼졌습니다  출력
+		DisplayInterface di = new DisplayInterface() {
+			
+			@Override
+			public void onDisplay() {
+				// TODO Auto-generated method stub
+				System.out.println("di가 켜졌습니다");
+			}
+			@Override
+			public void offDisplay() {
+				// TODO Auto-generated method stub
+				System.out.println("di가 꺼졌습니다");
+			}
+		};
+		
+		di.onDisplay();
+		di.offDisplay();
+		
+		// 클래스를 상속받고 인터페이스를 구현한 서브클래스
+		Taxi taxi = new Taxi();
+		taxi.setTaxi("red", 10);
+		System.out.println(taxi.getTexiColor());
+		
+		// Truck 클래스에 Car를 상속하여 
+		// setTruck과 getTruckColor, getTruckSpeed를 작성하세요
+		Truck truck = new Truck();
+		truck.setTruck("blue", 5);
+		System.out.println(truck.getTruckColor());
+		
+		// 인터페이스의 상속과 상수 정의
+		Bus bus = new Bus();
+		bus.RestDay(7);
+		
 	}
 
 }

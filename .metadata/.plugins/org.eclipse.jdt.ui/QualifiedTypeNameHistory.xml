@@ -31,4 +31,23 @@
     <fullyQualifiedTypeName name="chap08_inheritAnimal.AnimalCard"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="chap08_inheritAnimal.AnimalCardNew"/>
+    <fullyQualifiedTypeName name="chaper08_polymo.Car"/>
+    <fullyQualifiedTypeName name="chaper08_polymo.People"/>
+    <fullyQualifiedTypeName name="chaper08_polymo.SportsCar"/>
+    <fullyQualifiedTypeName name="chaper08_polymo.Worker"/>
+    <fullyQualifiedTypeName name="java.lang.Readable"/>
+    <fullyQualifiedTypeName name="java.lang.Record"/>
+    <fullyQualifiedTypeName name="chaper08_abstract.Rectangle"/>
+    <fullyQualifiedTypeName name="chaper08_abstract.Shape"/>
+    <fullyQualifiedTypeName name="chaper08_abstract.Circle"/>
+    <fullyQualifiedTypeName name="chaper08_abstract.Animal"/>
+    <fullyQualifiedTypeName name="chaper08_abstract.Mammal"/>
+    <fullyQualifiedTypeName name="chaper08_abstract.Dog"/>
+    <fullyQualifiedTypeName name="Chap09_interface.Truck"/>
+    <fullyQualifiedTypeName name="Chap09_interface.CarInterface"/>
+    <fullyQualifiedTypeName name="Chap09_interface.Taxi"/>
+    <fullyQualifiedTypeName name="Chap09_interface.DisplayInterface"/>
+    <fullyQualifiedTypeName name="Chap09_interface.DisplayTV"/>
+    <fullyQualifiedTypeName name="Chap09_interface.Comparable"/>
+    <fullyQualifiedTypeName name="Chap09_interface.Student"/>
 </qualifiedTypeNameHistroy>
