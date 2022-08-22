@@ -51,9 +51,9 @@
     <fullyQualifiedTypeName name="Chap09_interface.CarInterface"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="chap10_exception.MethodThrow"/>
     <fullyQualifiedTypeName name="chap10_exception.MyException"/>
     <fullyQualifiedTypeName name="chap10_exception.GreenException"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
